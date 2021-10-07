@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Home</title>
+</head>
+<body>
+    <div class="modal" tabindex="-1" id="contactmodal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Contact Eddy's Team</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-2">
+                    <div class="col-sm-12" id="firstname">
+                        <label for="firstname" class="form-label">First name</label>
+                        <input type="text" class="form-control" placeholder="first name" required> 
+                        
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="lastname" class="form-label">Last name</label>
+                        <input id="lastname" type="text" class="form-control" placeholder="last name" required>
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="emailinput" class="form-label">Email address</label>
+                        <input id="emailinput" type="email" class="form-control" placeholder="email address" required>             
+                        
+                    </div>
+                    <div class="col-sm-12">
+                        <label for="emailbody" class="form-label">Email body</label>
+                        <textarea id="emailbody" class="form-control" placeholder="type here..."></textarea>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send</button>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-2"></div>
+            <div class="col-xl-8">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Eddy Mylo</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item px-3">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a class="nav-link" href="#">Volunteer</a>
+                                </li>
+                                <li class="nav-item px-3">
+                                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#contactmodal">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-xl-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-0 col-xl-2"></div>
+            <div class="col-lg-6 col-xl-4">
+                <img title="A 2013 photograph of Eddy Mylo (Image by Teresa Wilson)" alt="A 2013 photograph of Eddy Mylo (image by Teresa Wilson)" class="img-fluid" src="up-close-and-personal-red-eyed-tree-frog-teresa-wilson.avif"/>
+            </div>
+            <div class="col-lg-6 col-xl-4">
+                <h1>Eddy Mylo</h1>
+                <p>Eddy Mylo thinks it's all there in <a class="d-inline-block" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="(Which is certainly not a tribute to Milo Edwards of the podcast Trashfuture)">
+                    the name
+                </a>; life is full of its own "eddies", its own variations and changes. The city needs a dynamic candidate to face the challenges of a new era. One with a real plan to tackle inequality, climate change, and capitalism.</p>
+                <h3>Mischief</h3>
+                <p>Eddy wants to fully decriminalize mischief. The mischief act of 1984 means Big Brother is always watching. Eddy Mylo would roll back the act on day one and follow the best advice of the mischievologists: implementing a big sister instead.</p>
+                <h3>Jobs</h3>
+                <p>Eddy Mylo thinks no-one should have to work a job. He's certainly never had to, and he's doing just fine. Look at his <a href="#">comprehensive plan</a> to scale back on work and industrialization and create a kinder future.</p>
+                
+            </div>   
+            <div class="col-xl-2 col-lg-0"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+    </script>
+</body>
+</html>
